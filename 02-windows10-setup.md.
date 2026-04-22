@@ -1,0 +1,37 @@
+# Windows 10 VM Setup Guide
+
+## Objective
+
+Deploy a Windows 10 virtual machine for desktop support, troubleshooting, and PowerShell practice.
+
+## VM Configuration
+
+- **Name:** Windows10-ITLab
+- **OS Type:** Windows 10 (64-bit)
+- **RAM:** 4096 MB
+- **CPU:** 2
+- **Disk:** 40 GB dynamically allocated
+- **Network Adapter:** Internal Network `ITLAB-LAN`
+
+## Installation Steps
+
+1. Create a new VM in VirtualBox.
+2. Attach the Windows 10 ISO.
+3. Start the VM and complete the Windows installation.
+4. Create a local administrator account for lab use.
+5. Install VirtualBox Guest Additions if needed.
+
+## Post-Install Configuration
+
+### Rename the PC
+
+Rename the machine to:
+
+`WIN10-CLIENT`
+
+### Verify IP Address
+
+Open Command Prompt and run:
+
+```powershell
+ipconfig
